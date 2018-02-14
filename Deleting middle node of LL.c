@@ -39,3 +39,25 @@ void delete(list head){
   node->link = temp->link; //the previous node now points to the next node of middle node thereby isolating it.
   free(temp); //deletion of the missle node.
 }
+
+
+
+
+
+//version2 => without using an extra function
+void delete_middle(node* head){
+    node* slow = head;
+    node* fast = head;
+    node* prev = NULL;
+    
+    while(fast!=NULL && fast->link != NULL){
+      prev = slow;
+      slow = slow->link;
+      fast = fast->link->link;
+    }
+    prev->link = slow->link;
+    free(slow);
+    return 0;
+  }
+
+

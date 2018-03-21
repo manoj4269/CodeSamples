@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int swap_bit(int n){
-    int x = n, even_bits, odd_bits;
+unsigned int swap_bit(unsigned int n){
+    unsigned int x = n, even_bits, odd_bits;
     even_bits = x & 0xAAAAAAAA;
     odd_bits = x & 0x55555555;
     
@@ -14,7 +14,7 @@ int swap_bit(int n){
 
 int main()
 {
-    int x = 23;
+    unsigned int x = 23;
     x = swap_bit(23);
     printf("%d", x);
     

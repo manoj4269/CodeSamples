@@ -1,2 +1,2 @@
 # CodeSamples
-This repo contains the basic code and other important functions related to many data structures
+This repo contains the basic coding problems for practice and other important functions related to many data structures.
